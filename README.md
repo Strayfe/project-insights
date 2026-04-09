@@ -2,6 +2,12 @@
 
 A directory of notable projects where I had considerable impact—my learnings, findings, and teachings.
 
+| Project                                                       | Description                                                                                     | Period |
+|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------|--------|
+| [Intelligence](projects/intelligence/README.md)               | Anonymous benchmarking analytics pipeline built on .NET 10 with streaming architecture          | 2026   |
+
+---
+
 ## Disclaimers
 
 > **Factual Accuracy:** Any assertions presented as facts within these projects were factually accurate at the time of my involvement and may be antiquated by today's standards. 
