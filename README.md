@@ -5,6 +5,7 @@ A directory of notable projects where I had considerable impact—my learnings, 
 | Project                                                       | Description                                                                                     | Period |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------|--------|
 | [Intelligence](projects/intelligence/README.md)               | Anonymous benchmarking analytics pipeline built on .NET 10 with streaming architecture          | 2026   |
+| [Bring Your Own Data](projects/bring-your-own-data/README.md) | Generic data import platform using queues, blob storage, and strategy resolver pattern          | 2025   |
 
 ---
 
