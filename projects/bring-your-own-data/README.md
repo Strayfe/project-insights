@@ -9,10 +9,10 @@ Social, and Governance (ESG) sustainability data.
 
 ## Task
 
-Implement a new feature into the system that would allow users to import ESG sustainability data into the system via the
-user interface, following some loose guidelines around nomenclature, graphics, and location. \
-Adhering to templates and existing functionality for consistency, implement a new user experience in the user interface
-of the flagship product that allows a user to import their ESG data. \
+Implement a new feature in the system that would allow users to import ESG sustainability data via the user interface,
+following some loose guidelines around nomenclature, graphics, and location. \
+Adhering to templates and existing functionality for consistency, implement a new user experience for the flagship
+product that allows users to import their ESG data. \
 Plan and implement the back-end architecture that will allow the system to store the data and inform the user of the outcome.
 
 ## Action
