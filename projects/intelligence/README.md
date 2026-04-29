@@ -23,25 +23,44 @@ The solution needed to:
 Built a command-line interface (CLI) application that ran locally, leveraging developer hardware performance—critical
 for the high concurrency required.
 
-Implemented in .NET 10 with a streaming architecture:
+Implemented in .NET 10 with a [streaming architecture](technical-findings.md#streaming-architecture):
 
-- **unbuffered queries** to avoid loading entire result sets into memory
-- **asynchronous enumeration** for composable, lazy asynchronous data iteration
-- **channels** for buffered handoff between concurrent producer and consumer coroutines
-- **concurrent coroutine marshalling** to parallelize transformation stages
-- **O(1) binary search and hash-based indexing** on materialised lookup collections
-- **artificial intelligence (AI) prompt engineering** for data enrichment and category classification
+- **[unbuffered queries](technical-findings.md#unbuffered-queries)** to avoid loading entire result sets into memory
+- **[asynchronous enumeration](technical-findings.md#asynchronous-enumeration-iasyncenumerablet)** for composable, 
+  lazy asynchronous data iteration
+- **[channels](technical-findings.md#channels-for-buffered-handoff)** for buffered handoff between concurrent 
+  producer and consumer coroutines
+- **[concurrent coroutine marshalling](technical-findings.md#concurrent-coroutine-marshalling)** to parallelise 
+  transformation stages
+- **[O(1) binary search and hash-based indexing](technical-findings.md#o1-binary-search-and-hash-based-indexing)** 
+  on materialised lookup collections
+- **[vector embeddings & semantic search](technical-findings.md#vector-embeddings--semantic-search)** 
+  for high-performance dimension mapping and lookups
+- **[evaluation agent pattern](technical-findings.md#the-evaluation-agent-pattern)** to sanity-check 
+  AI categorisation decisions and ensure data integrity
 - **crosswalk construction** to map between distinct taxonomies across source and target schemas
 
 The pipeline concurrently streamed large volumes of records from the source system through multiple transformation
-stages and wrote anonymised expenditure directly into a STAR schema data warehouse.
+stages and wrote anonymised expenditure directly into a **STAR schema** data warehouse.
 
-It was also capable of creating taxonomies and leveraged AI for building crosswalks between taxonomies in a similar domain.
+It was also capable of creating taxonomies and leveraged AI for building crosswalks between taxonomies in a 
+similar domain.
+
+## Deep Dives
+
+- **[Technical Findings](technical-findings.md)** — Architectural "guts," low-level implementation details, 
+  and performance benchmarks.
+- **[Lessons Learned](lessons-learned.md)** — Hard-won engineering lessons, from fuzzy searching to vector 
+  embeddings and the necessity of AI evaluation agents.
+- **[Examples](examples/README.md)** — Runnable demonstrations of the streaming architecture principles.
 
 ## Result
 
-- Delivered **idempotent tooling** capable of safely ingesting massive data volumes into a centralised, anonymised warehouse
-- Unlocked the **benchmarking feature** in the SaaS flagship product, allowing customers to analyse their expenditure trends
-- Enabled **cross-tenant comparison**, giving customers insight into their categorised spend relative to the wider platform
+- Delivered **idempotent tooling** capable of safely ingesting massive data volumes into a centralised, 
+  anonymised warehouse
+- Unlocked the **benchmarking feature** in the SaaS flagship product, allowing customers to analyse their 
+  expenditure trends
+- Enabled **cross-tenant comparison**, giving customers insight into their categorised spend relative to the 
+  wider platform
 - Featured in a Spend Matters success report, demonstrating consistent value-added to clients of the system
 - Used in negotiations to onboard high-profile clients
